@@ -1,0 +1,140 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    background-color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .80), rgba(0, 0, 0, .80), rgba(0, 0, 0, .50)100%), url(../img/bg.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    /*background-color: black;*/
+}
+
+.menu nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 32%;
+}
+
+.menu .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 30px;
+    color: var(--vermelho);
+    font-weight: bold;
+    display: none;
+}
+
+.btn {
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+
+.join-now {
+    background-color: var(--vermelho);
+}
+
+.join-now:hover {
+    background-color: #f00b16;
+}
+
+.sign {
+    border: 1px solid #888;
+}
+
+.sign:hover {
+    background-color: rgba(180, 180, 180, 0.2);
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 150px;
+    height: 250px;
+    font-size: 14pt;
+}
+
+.introduction .logo-text {
+    font-size: 45pt;
+    display: flex;
+}
+
+.introduction p {
+    width: 60%;
+    text-align: center;
+}
+
+main {
+    padding: 20px 40px;
+}
+
+.carousel {
+    margin: 50px 0px;
+}
+
+.carousel-title {
+    font-size: 14pt !important;
+    font-weight: bold;
+    padding-left: 10px;
+    border-left: 8px solid var(--vermelho);
+    margin-bottom: 10px;
+}
+
+.owl-carousel .item div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.owl-carousel .item div img {
+    width: 200px;
+}
+
+.owl-carousel .item div span {
+    margin-top: 10px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .introduction p {
+        width: 90%;
+        text-align: center;
+    }
+    .menu nav {
+        width: 100%;
+    }
+}
